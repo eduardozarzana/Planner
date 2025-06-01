@@ -3,20 +3,27 @@
     {
       "source": "/index.tsx",
       "headers": [
-        { "key": "X-Custom-Test-Header", "value": "HelloVercelTest" },
-        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
+        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" },
+        { "key": "X-Vercel-Test-IndexTSX", "value": "RuleForIndexTSX-Applied" }
       ]
     },
     {
       "source": "/(.*)\\.tsx$",
       "headers": [
-        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
+        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" },
+        { "key": "X-Vercel-Test-GenericTSX", "value": "RuleForGenericTSX-Applied" }
       ]
     },
     {
       "source": "/(.*)\\.ts$",
       "headers": [
         { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Vercel-Test-Catchall", "value": "CatchallRule-Applied" }
       ]
     }
   ]
