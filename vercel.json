@@ -3,6 +3,7 @@
     {
       "source": "/index.tsx",
       "headers": [
+        { "key": "X-Custom-Test-Header", "value": "HelloVercelTest" },
         { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
       ]
     },
