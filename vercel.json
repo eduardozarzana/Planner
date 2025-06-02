@@ -1,10 +1,27 @@
 {
   "headers": [
     {
-      "source": "/index.tsx",
+      "source": "/index.js",
       "headers": [
-        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" },
-        { "key": "X-Vercel-Diagnostic", "value": "Test-For-Index-TSX" }
+        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.js$",
+      "headers": [
+        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.tsx$", 
+      "headers": [
+        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.ts$",
+      "headers": [
+        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
       ]
     }
   ]
