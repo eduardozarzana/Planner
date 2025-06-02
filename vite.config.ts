@@ -19,6 +19,6 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/NOME_DO_REPOSITORIO/', // Substitua pelo nome do seu repositório no GitHub
+  base: '/Planner/', // Substitua pelo nome do seu repositório no GitHub
   plugins: [react()],
 });
