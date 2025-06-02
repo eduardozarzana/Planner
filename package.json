@@ -1,5 +1,5 @@
 {
-  "name": "smartshaker---planeje-melhor-a-sua-produção",
+  "name": "smartshaker---planeje-melhor-a-sua-producao",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,8 +13,7 @@
     "react-dom": "^19.0.0",
     "@google/genai": "^1.0.0",
     "react-router-dom": "^7.6.0",
-    "@supabase/supabase-js": "^2.0.0",
-    "@": "latest"
+    "@supabase/supabase-js": "^2.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
