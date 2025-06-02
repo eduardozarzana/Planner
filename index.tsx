@@ -1,9 +1,10 @@
-
+// main.tsx ou index.tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css'; // <-- Importação do CSS, ajuste o nome se necessário
 import App from './App';
 import { AppDataProvider } from './contexts/AppDataContext';
-import { AuthProvider } from './contexts/AuthContext'; // Import AuthProvider
+import { AuthProvider } from './contexts/AuthContext';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -13,7 +14,7 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <AuthProvider> { /* AuthProvider wraps AppDataProvider and App */ }
+    <AuthProvider>
       <AppDataProvider>
         <App />
       </AppDataProvider>
