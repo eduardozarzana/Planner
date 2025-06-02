@@ -3,25 +3,8 @@
     {
       "source": "/index.js",
       "headers": [
-        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
-      ]
-    },
-    {
-      "source": "/(.*)\\.js$",
-      "headers": [
-        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
-      ]
-    },
-    {
-      "source": "/(.*)\\.tsx$", 
-      "headers": [
-        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
-      ]
-    },
-    {
-      "source": "/(.*)\\.ts$",
-      "headers": [
-        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" }
+        { "key": "Content-Type", "value": "text/javascript; charset=utf-8" },
+        { "key": "X-Planner-Entry-Script", "value": "Served-As-JS" }
       ]
     }
   ]
